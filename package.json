@@ -1,0 +1,28 @@
+{
+  "name": "bridal-booking-app",
+  "version": "1.0.0",
+  "description": "Offline music player",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "build": "npm --prefix frontend run build",
+    "lint": "npm --prefix frontend run lint",
+    "test": "npm --prefix backend run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaikhahsan717171-glitch/Ipod-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shaikhahsan717171-glitch/Ipod-app/issues"
+  },
+  "homepage": "https://github.com/shaikhahsan717171-glitch/Ipod-app#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "private": true
+}
