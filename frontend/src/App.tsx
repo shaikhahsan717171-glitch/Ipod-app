@@ -1,4 +1,5 @@
-import { FormEvent, useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import type { FormEvent } from 'react'
 
 type Role = 'artist' | 'customer' | 'admin'
 type User = { id: string; name: string; email: string; role: Role }
@@ -136,12 +137,14 @@ function App() {
   }
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     loadArtists()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   useEffect(() => {
     if (user && token) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       loadRoleData()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
